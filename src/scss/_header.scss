@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background: rgba(16, 16, 29, 0.90);
+  z-index: 10;
+  &-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+  &__logo {
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 28px;
+    span {
+      color: #42A9ED;
+    }
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 60px;
+    &__item {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        color: #43ABF0;
+      }
+    }
+  }
+  &-menu {
+    display: none;
+  }
+}

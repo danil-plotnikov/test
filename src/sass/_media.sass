@@ -1,0 +1,233 @@
+@media screen and ( max-width: 1200px )
+ .container 
+  width: 800px
+ 
+ .main
+  padding: 160px 0
+  &__header 
+   font-size: 42px
+   margin-bottom: 50px
+  &-list 
+   margin-bottom: 50px
+
+ .order 
+  padding: 100px 0
+  &-steps 
+   &__item 
+    width: 150px
+    p 
+     width: 150px
+     font-size: 14px
+   &__img
+    --size: 75px
+    img 
+     max-width: 40px
+  &-form 
+   .custom-select-container,
+   &__input,
+   .order-file
+    width: 250px
+  &-slider 
+   width: 500px
+
+ .footer 
+  &-wrap 
+   p 
+    font-size: 10px
+  &-block 
+   gap: 0 10px
+   &__item 
+    gap: 0 6px
+
+@media screen and ( max-width: 800px )
+ .container 
+  width: 100%
+  padding: 0 20px
+
+ .header 
+  &-wrap 
+   height: 60px
+  &__logo 
+   font-size: 24px
+  &-nav 
+   gap: 0 30px
+ 
+ .main
+  padding: 100px 0
+  &__header 
+   font-size: 36px
+   margin-bottom: 30px
+  &__text 
+   font-size: 18px
+  &-list 
+   margin-bottom: 30px
+   &__item 
+    font-size: 18px
+  
+  
+
+ .order 
+  padding: 60px 0
+  &__header 
+   font-size: 32px
+   margin-bottom: 20px
+  &__title 
+   font-size: 16px
+   margin-bottom: 50px
+  &-steps 
+   margin-bottom: 40px
+   &__item 
+    width: 120px
+    p 
+     width: 120px
+     font-size: 12px
+   &__img
+    --size: 50px
+    margin-bottom: 10px
+    img 
+     max-width: 30px
+  &-form 
+   .custom-select-container,
+   &__input,
+   .order-file
+    width: 32%
+    font-size: 14px
+   .custom-select-opener,
+   .custom-select-panel,
+   .order-slider-top,
+   .order-form__btn,
+   .order-file p
+    font-size: 14px
+  &-slider 
+   width: 62%
+
+ .footer 
+  &-wrap 
+   p 
+    font-size: 8px
+
+@media screen and ( max-width: 800px )
+
+ .btn 
+  padding: 10px 5px
+
+ .header
+  &-nav 
+   position: fixed
+   top: 0
+   right: -100%
+   transition: 0.4s
+   width: 100%
+   height: 100%
+   background: #000
+   flex-direction: column
+   align-items: flex-end
+   justify-content: center
+   padding: 20px
+   gap: 20px 
+   z-index: -1
+   &__item 
+    font-size: 22px
+   &.active 
+    right: 0
+  &-menu
+   display: flex
+   flex-direction: column
+   gap: 5px
+   span 
+    width: 32px
+    height: 3px
+    background: #fff 
+    border-radius: 2px
+    display: block
+    transition: 0.4s
+   &.active 
+    span 
+     &:nth-child(1)
+      transform: rotate(45deg) translatey(11px)
+     &:nth-child(2)
+      opacity: 0
+     &:nth-child(3)
+      transform: rotate(-45deg) translatey(-11px)
+      
+  &-wrap 
+   height: 50px
+  &__logo 
+   font-size: 22px
+ 
+ .main 
+  padding: 80px 0 60px
+  &__header 
+   font-size: 28px
+   margin-bottom: 20px
+   br 
+    content: ""
+    &::after
+     content: " "
+  &__text 
+   font-size: 14px
+   margin-bottom: 8px
+  &-list 
+   margin-bottom: 20px
+   &__item 
+    font-size: 14px
+    margin-bottom: 2px
+  &-buttons 
+   gap: 0 20px
+   &__btn 
+    width: 150px
+    font-size: 12px
+
+ .order 
+  padding: 30px 0
+  &__header 
+   font-size: 24px
+  &__title 
+   font-size: 14px
+   margin-bottom: 30px
+  &-steps 
+   margin-bottom: 30px
+   flex-wrap: wrap
+   justify-content: center
+   gap: 15px 0
+   &__item 
+    width: 130px
+    p 
+     width: 100%
+   &__img 
+    --size: 60px
+    &::after
+     display: none
+  &-form 
+   gap: 15px 0
+   &__btn 
+    width: 100%
+   .custom-select-container,
+   &__input,
+   .order-file
+    width: 100%
+    font-size: 14px
+   .custom-select-opener,
+   .custom-select-panel,
+   .order-slider-top,
+   .order-form__btn,
+   .order-file p
+    font-size: 14px
+  &-slider 
+   width: 100%
+   &-top 
+    p 
+     width: 70%
+
+ .footer
+  &-wrap 
+   flex-direction: column
+   align-items: center
+   height: auto
+   padding: 15px 0
+   gap: 12px 0
+   p 
+    font-size: 12px
+  &-divider 
+   width: 60%
+   height: 1px

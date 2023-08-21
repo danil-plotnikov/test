@@ -1,0 +1,113 @@
+.custom-select-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 370px;
+  border-radius: 3px;
+}
+.custom-select-container * {
+  box-sizing: border-box;
+}
+.custom-select-opener {
+  background: rgba(255, 255, 255, 0.85);
+  color: #272733;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.custom-select-opener::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scaleY(-1);
+  right: 10px;
+  background: url(../img/dest/order/arrow.svg) center no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  transition: 0.4s;
+  filter: brightness(0);
+}
+
+.custom-select-container select {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.custom-select-panel {
+  max-height: 0;
+  transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
+  overflow: hidden;
+  background: rgba(39, 39, 51);
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.custom-select-panel::-webkit-scrollbar-track{
+	background-color: #3D4050;
+  border-radius: 3px;
+}
+
+.custom-select-panel::-webkit-scrollbar{
+	background-color: #3D4050;
+  width: 7px;
+}
+
+.custom-select-panel::-webkit-scrollbar-thumb{
+	background-color: #3E9CDC;
+  border-radius: 3px;
+}
+
+.custom-select-container.is-open .custom-select-panel {
+  max-height: 228px;
+  overflow-y: auto
+}
+
+.custom-select-container.is-open .custom-select-opener{
+  background: rgba(61, 64, 80);
+  border-radius: 3px 3px 0px 0px;
+  color: #FFF;
+  border: 1px solid rgba(61, 64, 80);
+}
+
+.custom-select-container.is-open .custom-select-opener::after{
+  transform: translateY(-50%) scaleY(1);
+  filter: none;
+}
+
+.custom-select-option {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.custom-select-option:first-child {
+  margin-top: 10px;
+}
+
+.custom-select-option:last-child {
+  margin-bottom: 10px;
+}
+
+.custom-select-option.has-focus {
+  color: #42A9ED;
+}
+.custom-select-optgroup > .custom-select-option {
+  padding-left: 2em;
+}
+.custom-select-optgroup::before {
+  content: attr(data-label);
+  display: block;
+  padding: 0.5em;
+  color: #888;
+}

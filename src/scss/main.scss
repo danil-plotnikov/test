@@ -1,0 +1,90 @@
+$main-font: 'Lato';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font, sans-serif;
+  color: #fff;
+  &.no-scroll {
+    max-height: 100%;
+    overflow: hidden !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+
+button {
+  font-family: $main-font, sans-serif;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+input {
+  font-family: $main-font, sans-serif;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 1172px;
+}
+.btn {
+  border-radius: 4px;
+  border: 1px solid #6F6D7B;
+  background: #FFF;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  &:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+}
+@import 'header';
+@import 'main-block';
+@import 'order';
+@import 'footer';
+@import 'media';

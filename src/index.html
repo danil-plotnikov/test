@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Test</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&family=Raleway:wght@800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="css/custom-select.css">
+ <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+ <header class="header">
+  <div class="header-wrap container">
+   <div class="header__logo">LoremIpsum.<span>Net</span></div>
+   <nav class="header-nav">
+    <a class="header-nav__item" href="#">Бизнес</a>
+    <a class="header-nav__item" href="#">О нас</a>
+    <a class="header-nav__item" href="#">Цены</a>
+    <a class="header-nav__item" href="#">Оформить заказ</a>
+   </nav>
+   <div class="header-menu"><span></span><span></span><span></span></div>
+  </div>
+ </header>
+ <!-- /.header -->
+
+ <main class="main">
+  <div class="container">
+    <h1 class="main__header"><span>Lorem ipsum</span> dolor sit amet <br>
+     consectetur <span>adipiscing</span></h1>
+   <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+   <ul class="main-list">
+    <li class="main-list__item">Totam rem aperiam eaque ipsa</li>
+    <li class="main-list__item">Sit voluptatem accusantium doloremque laudantium</li>
+    <li class="main-list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+   </ul>
+  
+   <div class="main-buttons">
+    <button class="btn main-buttons__btn main-buttons__btn_blue">заказать</button>
+    <button class="btn main-buttons__btn">подробнее</button>
+   </div>
+
+  </div>
+ </main>
+ <!-- /.main -->
+
+
+ <section class="order">
+  <div class="container">
+
+   <h2 class="order__header">Оформление  <span>Заказа</span></h2>
+   <p class="order__title">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+   <div class="order-steps">
+    <div class="order-steps__item">
+     <div class="order-steps__img"><img src="img/dest/order/steps-1.svg" alt=""></div>
+     <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="order-steps__item">
+     <div class="order-steps__img"><img src="img/dest/order/steps-2.svg" alt=""></div>
+     <p>Сonsecteturadipiscing elit</p>
+    </div>
+    <div class="order-steps__item">
+     <div class="order-steps__img"><img src="img/dest/order/steps-3.svg" alt=""></div>
+     <p>Sed do eiusmod tempor</p>
+    </div>
+    <div class="order-steps__item">
+     <div class="order-steps__img"><img src="img/dest/order/steps-4.svg" alt=""></div>
+     <p>Esse cillum dolore
+      eu fugiat</p>
+    </div>
+    <div class="order-steps__item">
+     <div class="order-steps__img"><img src="img/dest/order/steps-5.svg" alt=""></div>
+     <p>Excepteur sint occaecat cupidatat non proident</p>
+    </div>
+   </div>
+
+   <form method="post" action="#" class="order-form">
+    <select class="order-form__select" name="type">
+     <option value="Выберите тип системы">Выберите тип системы</option>
+     <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+     <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+     <option value="Et harum quidem">Et harum quidem</option>
+     <option value="Temporibus autem">Temporibus autem</option>
+     <option value="Itaque earum rerum">Itaque earum rerum</option>
+     <option value="Itaque earum rerum">Itaque earum rerum</option>
+     <option value="Itaque earum rerum">Itaque earum rerum</option>
+     <option value="Itaque earum rerum">Itaque earum rerum</option>
+     <option value="Itaque earum rerum">Itaque earum rerum</option>
+    </select>
+    <input type="mail" class="order-form__input" name="email" placeholder="Ваш e-mail">
+    <input type="text" class="order-form__input" name="name" placeholder="Ваше имя">
+    <div class="order-slider">
+     <div class="order-slider-top">
+      <p>Sed ut perspiciatis, unde omnis iste natus</p>
+      <div class="order-slider-top__value"></div>
+     </div>
+     <input class="order-slider__range" type="range" name="slider">
+    </div>
+    <label class="order-file">
+     <input type="file" name="file" class="order-file__input">
+     <img src="img/dest/order/file.svg" alt="">
+     <p class="order-file__text">Прикрепить файл</p>
+    </label>
+
+    <button class="btn order-form__btn">Отправить</button>
+   </form>
+
+  </div>
+ </section>
+ <!-- /.order -->
+
+ <footer class="footer">
+  <div class="footer-wrap container">
+
+   <p class="footer-rights">© 2018 «LoremIpsum.net» Все права защищены.</p>
+
+   <div class="footer-divider"></div>
+
+   <div class="footer-block footer-payment">
+    <div class="footer-block__item">
+     <img src="img/dest/footer/qiwi.svg" alt="">
+     <p>QiWI wallet</p>
+    </div>
+    <div class="footer-block__item">
+     <img src="img/dest/footer/yandex.svg" alt="">
+     <p>Yandex Money</p>
+    </div>
+    <div class="footer-block__item">
+     <img src="img/dest/footer/web-money.svg" alt="">
+     <p>Web Money</p>
+    </div>
+   </div>
+
+   <div class="footer-divider"></div>
+
+   <div class="footer-block">
+    <a href="#" class="footer-block__item">
+     <img src="img/dest/footer/mail.svg" alt="">
+     <p>info@ipsum228.com</p>
+    </a>
+    <a href="#" class="footer-block__item">
+     <img src="img/dest/footer/vk.svg" alt="">
+     <p>Мы вконтакте</p>
+    </a>
+   </div>
+
+  </div>
+ </footer>
+
+ <script src="js/custom-select.min.js"></script>
+ <script src="js/main.min.js"></script>
+
+</body>
+</html>
